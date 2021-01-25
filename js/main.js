@@ -83,3 +83,23 @@ jQuery(document).ready(function( $ ) {
     setPortfolio();
   });
 });
+
+
+$(document).ready(function () {
+
+  $('#form').submit(function (event) {
+    var formData = $('#form').serialize();
+    $.ajax({
+      url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdtKlZ5tkgayuyTMhQOjNvzm7kYCFa6QdMmO8mKBICfL94Pcw/formResponse",
+      data: formData,
+      type: "POST",
+      dataType: "xml",
+    });
+    event.preventDefault();
+    alert('送信しました');
+    location.href = "index.html";
+  });
+
+
+
+});
