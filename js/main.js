@@ -97,7 +97,7 @@ $(document).ready(function () {
     });
     event.preventDefault();
     alert('送信しました');
-    location.href = "index.html";
+    location.href = "https://skirnir1198.github.io/Myportfolio/";
   });
 
 
