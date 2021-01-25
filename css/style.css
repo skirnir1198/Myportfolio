@@ -471,7 +471,10 @@ csmall2 {
 
 
 /* Contact Form */
-
+.form {
+	margin: auto;
+	text-align: center;
+}
 .contact-form input, .contact-form textarea {
   padding: 10px 12px;
   border-radius: 0;
